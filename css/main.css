@@ -1,0 +1,51 @@
+.main {
+	width: 100%;
+	margin-top: 15px;
+}
+
+.main .section {
+	width: 100%;
+	margin: 30px auto;
+}
+
+
+
+.main .section .section-container {
+	width: 980px;
+	font-size: 20px;
+	margin: 0px auto;
+}
+
+.main .section-container .section-item{
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+
+.main .section-title {
+	font-family: 'Raleway','Cardo', NotoKr-Regular;
+	font-size: 40px;
+	font-weight: 500;
+	color:black;
+}
+
+.main .group {
+	width: 300px;
+	height: 250px;
+	display: inline-block;
+	vertical-align:top;
+}
+
+.img-group {
+	width: 200px;
+	height: 160px;
+}
+.img-member {
+	width: 160px;
+	height: 200px;
+}
+
+.news-img{
+	width: 160px;
+	height:120px;
+	border: 1px solid #1585D4;
+}

@@ -1,0 +1,364 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Centre for Artificial Intelligence (CAI)</title>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/zzsc-demo.css">
+		<link rel="stylesheet" type="text/css" href="css/bootsnav.css">
+		<link rel="stylesheet" href="css/main.css" />
+		<style type="text/css">
+			.navbar-brand {
+				padding: 29px 15px;
+				height: auto;
+			}
+			
+			nav.navbar.bootsnav {
+				border: none;
+				margin-bottom: 0px;
+			}
+			
+			.navbar-nav {
+				float: left;
+			}
+			
+			nav.navbar.bootsnav ul.nav>li>a {
+				color: #474747;
+				text-transform: uppercase;
+				padding: 30px;
+			}
+			
+			nav.navbar.bootsnav ul.nav>li:hover {
+				background: #f4f4f4;
+			}
+			
+			.nav>li:after {
+				content: "";
+				width: 0;
+				height: 5px;
+				background: #34c9dd;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				transition: all 0.5s ease 0s;
+			}
+			
+			.nav>li:hover:after {
+				width: 100%;
+			}
+			
+			nav.navbar.bootsnav ul.nav>li.dropdown>a.dropdown-toggle:after {
+				content: "+";
+				font-family: 'FontAwesome';
+				font-size: 16px;
+				font-weight: 500;
+				position: absolute;
+				top: 35%;
+				right: 10%;
+				transition: all 0.4s ease 0s;
+			}
+			
+			nav.navbar.bootsnav ul.nav>li.dropdown.on>a.dropdown-toggle:after {
+				content: "\f105";
+				transform: rotate(90deg);
+			}
+			
+			.dropdown-menu.multi-dropdown {
+				position: absolute;
+				left: -100% !important;
+			}
+			
+			nav.navbar.bootsnav li.dropdown ul.dropdown-menu {
+				box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+				border: none;
+			}
+			
+			@media only screen and (max-width:990px) {
+				nav.navbar.bootsnav ul.nav>li.dropdown>a.dropdown-toggle:after,
+				nav.navbar.bootsnav ul.nav>li.dropdown.on>a.dropdown-toggle:after {
+					content: " ";
+				}
+				.dropdown-menu.multi-dropdown {
+					left: 0 !important;
+				}
+				nav.navbar.bootsnav ul.nav>li:hover {
+					background: transparent;
+				}
+				nav.navbar.bootsnav ul.nav>li>a {
+					margin: 0;
+				}
+			}
+		</style>
+
+	</head>
+
+	<body>
+		<nav class="navbar navbar-default navbar-mobile bootsnav" style="text-align: center;">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+							<i class="fa fa-bars"></i>
+						</button>
+			</div>
+			<div class="collapse navbar-collapse" id="navbar-menu">
+				<ul class="nav navbar-nav" data-in="fadeInDown" data-out="fadeOutUp">
+					<li style="margin-left: 100px;">
+						<a href="index.html">Home</a>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Overview</a>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="https://www.uts.edu.au/research-and-teaching/our-research/centre-artificial-intelligence/overview/who-we-are">Who we are</a>
+							</li>
+							<li>
+								<a href="https://www.uts.edu.au/research-and-teaching/our-research/centre-artificial-intelligence/overview/our-history">Our history</a>
+							</li>
+							<li>
+								<a href="https://www.uts.edu.au/research-and-teaching/our-research/centre-artificial-intelligence/overview/what-we-do">What we do</a>
+							</li>
+
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Research</a>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="https://www.uts.edu.au/research-and-teaching/our-research/centre-artificial-intelligence/our-labs/decisions-systems">Decision Systems and E-Service Intelligence</a>
+							</li>
+							<li>
+								<a href="https://www.uts.edu.au/research-and-teaching/our-research/centre-artificial-intelligence/our-labs/data-science">Data Sciences and Knowledge Discovery</a>
+							</li>
+							<li>
+								<a href="https://www.uts.edu.au/research-and-teaching/our-research/centre-artificial-intelligence/our-labs/knowledge-infrastructure">Biomedical Data Science</a>
+							</li>
+							<li>
+								<a href="https://www.uts.edu.au/research-and-teaching/our-research/centre-artificial-intelligence/our-labs/computational">Computational Intelligence and Brian Computer Interface</a>
+							</li>
+							<li>
+								<a href="https://www.uts.edu.au/research-and-teaching/our-research/centre-artificial-intelligence/our-labs/innovation-and-enterprise">Magic</a>
+							</li>
+							<li>
+								<a href="projects.html">Projects</a>
+							</li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Opportunities</a>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="#">Jobs</a>
+							</li>
+							<li>
+								<a href="http://cfsites1.uts.edu.au/find/uts-research/find-a-supervisor/index.cfm">Study</a>
+							</li>
+							<li>
+								<a href="https://www.uts.edu.au/research-and-teaching/our-research/centre-artificial-intelligence/our-labs/joint-research-centres">Research Collaboration</a>
+							</li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">People</a>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="#">Chief Researcher</a>
+							</li>
+							<li>
+								<a href="https://www.uts.edu.au/research-and-teaching/our-research/centre-artificial-intelligence/overview/hdr-students">Student</a>
+							</li>
+							<li>
+								<a href="https://www.uts.edu.au/about/faculty-engineering-and-information-technology/feit-staff">Staff</a>
+							</li>
+
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">News</a>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="https://www.uts.edu.au/research-and-teaching/our-research/centre-artificial-intelligence/news">News</a>
+							</li>
+							<li>
+								<a href="spotlights.html">Spotlights</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="events.html">Events</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<div style="display: block;width:100%;margin-top:0px;padding:0 0 0 0 ">
+			<img style="height:280px;width:100%" src="images/cover1.jpg"></img>
+		</div>
+		<div style="clear: both;height:0px "></div>
+		<div id="main" class="main">
+			<div class="section">
+				<div class="section-container">
+					<div class="section-title">Centre for Artificial Intelligence</div>
+					<div style="width: 27%;margin-top:10px;float: left;"> <img src="images/CAI.png" style="width:100%;">
+						</img>
+					</div>
+					<div style="width:70%;margin-top:10px; font-size: 18px;font-weight:normal;float:right;">
+						Centre for Artificial Intelligence (CAI) is a world leading research centre in artificial intelligence, with a vision to develop theoretical foundations and advanced algorithms for artificial intelligence and to drive significant progress in related areas like computational intelligence, business intelligence, computer vision, data science, machine learning, brain computer interface, social robotics and information systems.
+					</div>
+				</div>
+
+			</div>
+			<div style="clear: both;"></div>
+			<div id="Research " class="section" style="background-color: lightgray;">
+				<div class="section-container">
+					<div class="section-title">Research</div>
+					<div style="text-align: center;">
+						<div id="group1 " class="group">
+							<img title="Group1 " class="img-group " src="images/decision support.jpg" alt="group 1 "></img>
+							<div style="margin-top: 10px;">
+								<a style="text-decoration:none;color:black" href="https://www.uts.edu.au/research-and-teaching/our-research/centre-artificial-intelligence/our-labs/decisions-systems">
+									<font style="font-family: Source Sans Pro;font-size: 20px;">Decision Systems and E-Service Intelligence</font>
+								</a>
+							</div>
+						</div>
+						<div id="group2 " class="group">
+							<img title="Group1 " class="img-group " src="images/data science.jpg" alt="group 1 "></img>
+							<div style="margin-top: 10px;">
+								<a style="text-decoration:none;color:black" href="https://www.uts.edu.au/research-and-teaching/our-research/centre-artificial-intelligence/our-labs/data-science">
+									<font style="font-family: Source Sans Pro;font-size: 20px;">Data Sciences and Knowledge Discovery</font>
+								</a>
+							</div>
+						</div>
+						<div id="group3 " class="group">
+							<img title="Group1 " class="img-group " src="images/Biomedical Data.jpg" alt="group 1 "></img>
+							<div style="margin-top: 10px;">
+								<a style="text-decoration:none;color:black" href="https://www.uts.edu.au/research-and-teaching/our-research/centre-artificial-intelligence/our-labs/knowledge-infrastructure">
+									<font style="font-family: Source Sans Pro;font-size: 20px;">Biomedical Data Science</font>
+								</a>
+							</div>
+						</div>
+
+					</div>
+					<div style="text-align: center;">
+						<div id="group4 " class="group">
+							<img title="Group1 " class="img-group " src="images/Brain lab.jpg" alt="group 1 "></img>
+							<div style="margin-top: 10px;">
+								<a style="text-decoration:none;color:black" href="https://www.uts.edu.au/research-and-teaching/our-research/centre-artificial-intelligence/our-labs/computational">
+									<font style="font-family: Source Sans Pro;font-size: 20px;">Computational Intelligence and Brian Computer Interface</font>
+								</a>
+							</div>
+						</div>
+						<div id="group5 " class="group">
+							<img title="Group1 " class="img-group " src="images/social robotics.jpg" alt="group 1 "></img>
+							<div style="margin-top: 10px;">
+								<a style="text-decoration:none;color:black" href="https://www.uts.edu.au/research-and-teaching/our-research/centre-artificial-intelligence/our-labs/innovation-and-enterprise">
+									<font style="font-family: Source Sans Pro;font-size: 20px;">Magic</font>
+								</a>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div id="Team " class="section">
+				<div class="section-container">
+					<div class="section-title">People</div>
+					<div style="text-align: center; ">
+						<div id="people1" class="group">
+							<img class="img-member" src="images/Jie-Lu.jpg" alt="group 1 "></img>
+							<div style="font-family: Source Sans Pro;font-size: 16px;">
+								<a style="text-decoration:none;color:black" href="https://www.uts.edu.au/staff/jie.lu">
+									Director<br/> Dist. Prof. Jie Lu</a>
+							</div>
+						</div>
+						<div id="people2" class="group">
+							<img class="img-member" src="images/Chin-Teng-Lin.jpg" alt="group 1 "></img>
+							<div style="font-family: Source Sans Pro;font-size: 16px;">
+								<a style="text-decoration:none;color:black" href="http://www.uts.edu.au/staff/chin-teng.lin">
+									Co-Director<br/>Dist. Prof. Chin-Teng Lin</a>
+							</div>
+						</div>
+						<div id="people3" class="group">
+							<img class="img-member" src="images/Ivor Tsang.jpg" alt="group 1 "></img>
+							<div style="font-family: Source Sans Pro;font-size: 16px;">
+								<a style="text-decoration:none;color:black" href="http://www.uts.edu.au/staff/ivor.tsang">
+									Research Director<br/>Prof. Ivor Tsang</a>
+							</div>
+						</div>
+					</div>
+					<div style="text-align: center;">
+						<div id="people5" class="group">
+							<img class="img-member" src="images/Mary-Anne-Williams.jpg" alt="group 1 "></img>
+							<div style="font-family: Source Sans Pro;font-size: 16px;">
+								<a style="text-decoration:none;color:black" href="http://www.uts.edu.au/staff/mary-anne.williams">
+									Director of Magic Lab<br/>Dist. Prof. Mary-Anne-Williams</a>
+							</div>
+						</div>
+						<div id="people6" class="group">
+							<img class="img-member" src="images/Guangquan Zhang.jpg" alt="group 1 "></img>
+							<div style="font-family: Source Sans Pro;font-size: 16px;">
+								<a style="text-decoration:none;color:black" href="http://www.uts.edu.au/staff/guangquan.zhang">
+									Director of Decision Systems and E-Service Intelligence Lab<br/>A/Prof. Guangquan Zhang</a>
+							</div>
+						</div>
+						<div id="people4" class="group">
+							<img class="img-member" src="images/yang yi.jpg" alt="group 1 "></img>
+							<div style="font-family: Source Sans Pro;font-size: 16px;">
+								<a style="text-decoration:none;color:black" href="http://www.uts.edu.au/staff/yi.yang">
+									A/DRsch<br/> Prof. Yi Yang</a>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+			<div style="clear:both"></div>
+			<div id="News " class="section" style="background-color: lightgray;color:black">
+				<div class="section-container">
+					<div class="section-title">News</div>
+					<div id="new1" class="section-item" style="border-bottom: 1px darkgray solid;">
+						<div style="display: inline-block; vertical-align: top;">
+							<img title="Group1 " class="news-img" src="images/Jie_opening.jpg" alt="group 1 "></img>
+						</div>
+						<div style="font-size:14px; font-family:font-family: Arial,Helvetica,sans-serif; display: inline-block; vertical-align: top; width:750px">
+							<p style="margin: 0 0 0 0;font-size:20px;font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans', Verdana, sans-serif;
+">Centre for Artificial Intelligence launches</p>While there is no consensus on a definition of Artificial Intelligence, it is one of the ‘hot’ topics in both theoretical and applied research, and in popular discourse about the profound impact it may have on individuals. industries and economies. The new Centre for Artificial Intelligence (UTS: CAI) will focus on the theoretical foundations and advanced technologies that will create intelligent machines with greater capacity for perception, learning and reasoning.
+						</div>
+					</div>
+					<div id="new2" class="section-item" style="border-bottom: 1px darkgray solid;">
+						<div style="display: inline-block; vertical-align: top;"><img class="news-img" src="images/CAI OKane.crop_.jpg"></div>
+						<div style="font-size:14px; font-family:font-family: Arial,Helvetica,sans-serif; display: inline-block; vertical-align: top; width:750px">
+							<p style="margin: 0 0 0 0;font-size:20px;font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans', Verdana, sans-serif;
+">New UTS centre places artificial intelligence in the ‘fuzzy mainstream’</p>
+						</div>
+					</div>
+					<div id="new3" class="section-item" style="border-bottom: 1px darkgray solid;">
+						<div style="display: inline-block; vertical-align: top;"><img class="news-img" src="images/Google Faculty Research Award.jpg"></div>
+						<div style="font-size:14px; font-family:font-family: Arial,Helvetica,sans-serif; display: inline-block; vertical-align: top; width:750px">
+							<p style="margin: 0 0 0 0;font-size:20px;font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans', Verdana, sans-serif;
+">Google Faculty Research Award</p>Prof. Yi Yang was recently awarded by the Google Faculty Research Award in recognition of my proposal to efficient video analysis.
+						</div>
+					</div>
+				</div>
+			</div>
+			<div style="clear:both"></div>
+			<div id="Events " class="section">
+				<div class="section-container">
+					<div class="section-title">
+						<a href="events.html">Events</a>
+					</div>
+					<div id="event1 ">Event</div>
+					<div id="event2 ">Event</div>
+					<div id="event3 ">Event</div>
+				</div>
+			</div>
+		</div>
+		<div id="foot "></div>
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+
+		<script src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/bootsnav.js"></script>
+	</body>
+
+</html>

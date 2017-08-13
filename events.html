@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/jquery-ui-themes-1.12.1/themes/smoothness/jquery-ui.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<script>
+			$(function() {
+				$("#datepicker").datepicker({
+					numberOfMonths: 3,
+					onSelect: function(dateText, inst) {
+						var txt = "<p><strong>Jie Lu:Fuzzy transfer learning part " + (Math.round(Math.random()*10)+1)+ "</strong></p>" + "<p>" + dateText +" 12:00-14:00</p>" + "<p>CB11.06.408</p>";
+						$("#detail").css('display', 'block');
+						$("#detail").empty();
+						$("#detail").append(txt);
+						
+					}
+				});
+			});
+		</script>
+	</head>
+
+	<body>
+
+		<div id="main" class="main">
+			<div class="section">
+				<div class="section-container">
+					<div class="section-title">Events</div>
+					<div id="datepicker" style="width: 27%;margin-top:10px;">
+					</div>
+					<div id="detail" style="margin-top:10px; font-size: 17px;font-weight:normal;display:none">
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>
